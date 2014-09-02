@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyViewPager">
+
+        <!--
+dotsViewHeight定义底部指示物所在视图（我定义为一个LinearLayout）的高度，也就是示例图中圆圈所在灰色透明部分的高度，默认为40像素；
+dotsSpacing定义底部指示物之间的间距，默认为0；
+dotsFocusImage定义代表当前页的指示物的样子；
+dotsBlurImage定义代表非当前页的指示物的样子；
+android:scaleType定义ViewPager中ImageView的scale类型，如果ViewPager中的View不是ImageView，则此属性没有效果，默认为ScaleType.FIT_XY；
+android:gravity定义底部指示物在父View（即示例灰色透明部分）的gravity属性；
+dotsBackground定义底部指示物的背景颜色或背景图；
+dotsBgAlpha定义底部指示物的背景颜色或背景图的透明度，取值为0-1,0代表透明；
+changeInteval定义ViewPager自动切换的时间间隔，单位为ms，默认为1000ms（这个地方实际的间隔比设置的要大，不知道是什么原因，望高手解答）；
+        -->
+        <attr name="dotsViewHeight" format="dimension" />
+        <attr name="dotsSpacing" format="dimension" />
+        <attr name="dotsFocusImage" format="reference" />
+        <attr name="dotsBlurImage" format="reference" />
+        <attr name="android:scaleType" />
+        <attr name="android:gravity" />
+        <attr name="dotsBackground" format="reference|color" />
+        <attr name="dotsBgAlpha" format="float" />
+        <attr name="changeInterval" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <attr name="ptrDrawable" format="reference" />
+        <attr name="ptrDrawableStart" format="reference" />
+        <attr name="ptrDrawableEnd" format="reference" />
+        <attr name="ptrOverScroll" format="reference|boolean" />
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Deprecated -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AsyncImageView">
+        <attr name="defaultSrc" format="reference" />
+        <attr name="url" format="string" />
+        <attr name="inDensity">
+            <enum name="ldpi" value="120" />
+            <enum name="mdpi" value="160" />
+            <enum name="hdpi" value="240" />
+            <enum name="xhdpi" value="320" />
+        </attr>
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

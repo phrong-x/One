@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linCollection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_line"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px15"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px22"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="圆梦有限公司"
+                android:textSize="@dimen/px33"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_chengxin"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="质量:"
+                android:textColor="@color/font_color_b3b3b3"
+                android:textSize="@dimen/px22" />
+
+            <ImageView
+                android:id="@+id/stars"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/star50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px12"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/company_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/location_image"
+                android:drawablePadding="@dimen/px5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="江北观音桥"
+                android:textColor="@color/font_color_b3b3b3"
+                android:textSize="@dimen/px20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/working"
+                android:textColor="@color/font_color_b3b3b3"
+                android:textSize="@dimen/px22" />
+
+            <TextView
+                android:id="@+id/working"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="维修"
+                android:textColor="@color/cc"
+                android:textSize="@dimen/px20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_v"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line_v" />
+
+    <ImageButton
+        android:id="@+id/tel_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/px33"
+        android:layout_marginRight="@dimen/px33"
+        android:background="@drawable/telephone_image"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

@@ -1,0 +1,285 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.kaiqi.love_family.activity.SettingsActivity" >
+
+        <ToggleButton
+            android:id="@+id/tbPushMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgt"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px10"
+            android:paddingRight="0dp"
+            android:textColor="@color/font_color_4c4c4c"
+            android:textOff="推送消息"
+            android:textOn="推送消息"
+            android:textSize="@dimen/font_size30" />
+
+        <LinearLayout
+            android:id="@+id/linOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px15"
+                android:paddingRight="@dimen/px20" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/system_message"
+                    android:textColor="@color/forgot_font_color"
+                    android:textSize="@dimen/font_size24" />
+
+                <ImageView
+                    android:id="@+id/imgSys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/off_sys_ms" />
+
+                <ToggleButton
+                    android:id="@+id/tbSysSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/feigexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px15"
+                android:paddingRight="@dimen/px20" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/discuss_news"
+                    android:textColor="@color/forgot_font_color"
+                    android:textSize="@dimen/font_size24" />
+
+                <ImageView
+                    android:id="@+id/imgDiscuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/off_sys_ms" />
+
+                <ToggleButton
+                    android:id="@+id/tbDiscuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/feigexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px15"
+                android:paddingRight="@dimen/px20" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/tips_way"
+                    android:textColor="@color/forgot_font_color"
+                    android:textSize="@dimen/font_size24" />
+
+                <ImageView
+                    android:id="@+id/imgTipSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ringing_on" />
+
+                <ToggleButton
+                    android:id="@+id/tbTipSwitch"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/feigexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/px15"
+                android:paddingRight="@dimen/px20" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/tip_time"
+                    android:textColor="@color/forgot_font_color"
+                    android:textSize="@dimen/font_size24" />
+
+                <ImageView
+                    android:id="@+id/imgTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/day_on" />
+
+                <ToggleButton
+                    android:id="@+id/tbTime"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgt"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="@dimen/px20" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="省流量模式"
+                    android:textColor="@color/font_color_4c4c4c"
+                    android:textSize="@dimen/font_size30" />
+
+                <ImageView
+                    android:id="@+id/imgPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/off_sys_ms" />
+
+                <ToggleButton
+                    android:id="@+id/tbPowerSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bgt"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="0dp"
+                android:text="检查更新"
+                android:textColor="@color/font_color_4c4c4c"
+                android:textSize="@dimen/font_size30" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bgt"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="0dp"
+                android:text="新功能介绍"
+                android:textColor="@color/font_color_4c4c4c"
+                android:textSize="@dimen/font_size30" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bgt"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="0dp"
+                android:text="意见反馈"
+                android:textColor="@color/font_color_4c4c4c"
+                android:textSize="@dimen/font_size30" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bgt"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="0dp"
+                android:text="关注我们"
+                android:textColor="@color/font_color_4c4c4c"
+                android:textSize="@dimen/font_size30" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bgt"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px10"
+                android:paddingRight="0dp"
+                android:text="退出"
+                android:textColor="@color/font_color_4c4c4c"
+                android:textSize="@dimen/font_size30" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

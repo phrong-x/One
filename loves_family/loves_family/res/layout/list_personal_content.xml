@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_personal_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgimg_content_bg_bar"
+    android:drawableBottom="@drawable/bgimg_division_line"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/px20" >
+
+</TextView>

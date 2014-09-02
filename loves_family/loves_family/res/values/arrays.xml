@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 李鑫 -->
+    <string-array name="spinner1">
+        <item>江北区</item>
+        <item>渝北区</item>
+        <item>南坪区</item>
+        <item>北碚区</item>
+        <item>渝中区</item>
+        <item>沙坪坝区</item>
+        <item>大渡口区</item>
+        <item>巴南区</item>
+        <item>九龙坡区</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>江北区</item>
+        <item>渝北区</item>
+        <item>南坪区</item>
+        <item>北碚区</item>
+        <item>渝中区</item>
+        <item>沙坪坝区</item>
+        <item>大渡口区</item>
+        <item>巴南区</item>
+        <item>九龙坡区</item>
+    </string-array>
+    <string-array name="spinner3">
+        <item>默认</item>
+        <item>认证优先</item>
+        <item>按星级排序</item>
+    </string-array>
+    <!-- phrong的个人中心列表 -->
+    <string-array name="personal_center_listing">
+        <item>我的收藏</item>
+        <item>我的发布</item>
+        <item>通知</item>
+        <item>我的帮帮</item>
+        <item>拨打记录</item>
+        <item>我的评价</item>
+        <item>浏览历史</item>
+    </string-array>
+
+</resources>

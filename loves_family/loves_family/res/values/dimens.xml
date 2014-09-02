@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">25dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">10dp</dimen>
+    <dimen name="header_footer_internal_padding">20dp</dimen>
+    <dimen name="header_footer_max_width">320dp</dimen>
+    <dimen name="gd_arrow_offset">5dp</dimen>
+    <dimen name="gd_item_view_height">48dp</dimen>
+    <dimen name="gd_item_view_half_height">32dp</dimen>
+    <dimen name="gd_item_view_padding_left">6dp</dimen>
+    <dimen name="gd_drawable_width">50dp</dimen>
+    <dimen name="gd_drawable_height">50dp</dimen>
+    <dimen name="gd_drawable_margin">6dp</dimen>
+    <!-- 以下是phrong定义的尺寸 -->
+
+    <dimen name="font_size20">13sp</dimen>
+    <dimen name="font_size24">16sp</dimen>
+    <dimen name="font_size30">20sp</dimen>
+    <dimen name="font_size36">24sp</dimen>
+    <dimen name="px5">3dip</dimen>
+    <dimen name="px10">7dip</dimen>
+    <dimen name="px12">8dip</dimen>
+    <dimen name="px15">10dip</dimen>
+    <dimen name="px17">11dip</dimen>
+    <dimen name="px20">13dip</dimen>
+    <dimen name="px22">15dip</dimen>
+    <dimen name="px30">20dip</dimen>
+    <dimen name="px33">22dip</dimen>
+
+    <!-- 以上是phrong定义的尺寸 -->
+<dimen name="dialog_padding">25dp</dimen>
+</resources>

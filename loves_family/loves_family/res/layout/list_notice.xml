@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linNotice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/notice_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px20"
+    android:paddingLeft="@dimen/px15"
+    android:paddingRight="@dimen/px10"
+    android:paddingTop="@dimen/px20" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房价还在跌，你还等什么"
+            android:textColor="@color/font_color_4c4c4c"
+            android:textSize="@dimen/font_size24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2014-08-22"
+            android:textColor="@color/forgot_font_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:text="自2014年8月18日............"
+        android:textColor="@color/forgot_font_color"
+        android:textSize="@dimen/font_size20" />
+
+</LinearLayout>

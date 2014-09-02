@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reFeedBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000ff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="文字描述：" />
+
+        <RelativeLayout
+            android:id="@+id/aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/text" >
+
+            <EditText
+                android:id="@+id/edtTextInputBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_img_input"
+                android:gravity="top"
+                android:hint="请输入" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTextInputBox"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="-22dp"
+                android:layout_toRightOf="@id/edtTextInputBox"
+                android:text="/500" />
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTextInputBox"
+                android:layout_marginLeft="-101dp"
+                android:layout_marginTop="-22dp"
+                android:layout_toRightOf="@id/edtTextInputBox"
+                android:gravity="right"
+                android:maxLength="500"
+                android:text="500" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/btn_img_commit" />
+    </RelativeLayout>
+
+</LinearLayout>
