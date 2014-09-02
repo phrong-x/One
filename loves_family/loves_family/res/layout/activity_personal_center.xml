@@ -27,7 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/px20"
             android:background="@null"
-            android:src="@drawable/bgimg_withdraw" />
+            android:src="@drawable/img_settings" />
     </RelativeLayout>
 
     <LinearLayout

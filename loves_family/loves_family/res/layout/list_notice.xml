@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/linNotice"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/notice_content"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/px20"
-    android:paddingLeft="@dimen/px15"
+    android:paddingBottom="@dimen/px10"
+    android:paddingLeft="@dimen/px10"
     android:paddingRight="@dimen/px10"
-    android:paddingTop="@dimen/px20" >
+    android:paddingTop="@dimen/px10" >
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <TextView
@@ -30,10 +30,12 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/px10"
-        android:text="自2014年8月18日............"
+        android:layout_marginTop="@dimen/px5"
+        android:maxLength="500"
+        android:singleLine="true"
+        android:text="自2014年8月18日,重庆房价一直下跌，平均最低房价已达1099元/m^2，最高也只需要4999元/m^2，是买房的好季节"
         android:textColor="@color/forgot_font_color"
         android:textSize="@dimen/font_size20" />
 

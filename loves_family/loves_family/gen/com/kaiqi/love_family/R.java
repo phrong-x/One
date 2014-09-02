@@ -895,7 +895,7 @@ containing a value of this type.
         public static final int LinearLayout_8=0x7f0500c9;
         public static final int TextView01=0x7f0500b5;
         public static final int aa=0x7f050079;
-        public static final int action_settings=0x7f0500d8;
+        public static final int action_settings=0x7f0500d9;
         public static final int addfence=0x7f0500bf;
         public static final int adv_pager=0x7f050089;
         public static final int alertTitle=0x7f050080;
@@ -915,6 +915,7 @@ containing a value of this type.
         public static final int btnRegister=0x7f050056;
         public static final int btnReset=0x7f050073;
         public static final int btn_back=0x7f05002b;
+        public static final int btn_feedback=0x7f0500d7;
         public static final int button1=0x7f050052;
         public static final int button2=0x7f050085;
         public static final int citys=0x7f05006c;
@@ -1104,7 +1105,7 @@ containing a value of this type.
         public static final int txt_personal_item=0x7f0500ae;
         public static final int viewGroup=0x7f05008a;
         public static final int weather=0x7f05008e;
-        public static final int welcome_bg=0x7f0500d7;
+        public static final int welcome_bg=0x7f0500d8;
         public static final int working=0x7f0500a1;
         public static final int xhdpi=0x7f05000c;
     }

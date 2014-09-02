@@ -100,7 +100,8 @@
         </activity>
         <activity android:name="com.kaiqi.love_family.activity.ClassifyActivity" >
         </activity>
-        <activity android:name="com.kaiqi.love_family.activity.GeoCoderActivity"></activity>
+        <activity android:name="com.kaiqi.love_family.activity.GeoCoderActivity" >
+        </activity>
         <!-- 翔 -->
         <activity
             android:name=".LoginActivity"
@@ -130,6 +131,12 @@
             android:name=".PersonalCenterFragment"
             android:label="@string/title_activity_personal_center" >
         </activity>
+        <activity android:name="com.kaiqi.love_family.activity.Help" >
+        </activity>
+        <activity android:name="com.kaiqi.love_family.activity.Call_recording" >
+        </activity>
+        <activity android:name="com.kaiqi.love_family.activity.Evaluation"></activity>
+        <activity android:name="com.kaiqi.love_family.activity.BrowsingHistory"></activity>
     </application>
 
 </manifest>

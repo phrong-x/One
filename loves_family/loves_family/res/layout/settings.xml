@@ -34,13 +34,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px12"
                 android:paddingLeft="@dimen/px15"
-                android:paddingRight="@dimen/px20" >
+                android:paddingRight="@dimen/px20"
+                android:paddingTop="@dimen/px12" >
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@null"
+                    android:layout_centerVertical="true"
                     android:text="@string/system_message"
                     android:textColor="@color/forgot_font_color"
                     android:textSize="@dimen/font_size24" />
@@ -55,9 +57,10 @@
 
                 <ToggleButton
                     android:id="@+id/tbSysSwitch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="74dp"
+                    android:layout_height="34dp"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:checked="true"
                     android:textOff=""
@@ -72,13 +75,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px12"
                 android:paddingLeft="@dimen/px15"
-                android:paddingRight="@dimen/px20" >
+                android:paddingRight="@dimen/px20"
+                android:paddingTop="@dimen/px12" >
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@null"
+                    android:layout_centerVertical="true"
                     android:text="@string/discuss_news"
                     android:textColor="@color/forgot_font_color"
                     android:textSize="@dimen/font_size24" />
@@ -93,9 +98,10 @@
 
                 <ToggleButton
                     android:id="@+id/tbDiscuss"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="74dp"
+                    android:layout_height="34dp"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:checked="true"
                     android:textOff=""
@@ -110,13 +116,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px15"
                 android:paddingLeft="@dimen/px15"
-                android:paddingRight="@dimen/px20" >
+                android:paddingRight="@dimen/px20"
+                android:paddingTop="@dimen/px15" >
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@null"
+                    android:layout_centerVertical="true"
                     android:text="@string/tips_way"
                     android:textColor="@color/forgot_font_color"
                     android:textSize="@dimen/font_size24" />
@@ -131,9 +139,11 @@
 
                 <ToggleButton
                     android:id="@+id/tbTipSwitch"
-                    android:layout_width="133dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
+                    android:layout_alignLeft="@+id/imgTipSwitch"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:checked="true"
                     android:textOff=""
@@ -148,12 +158,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/px15"
                 android:paddingLeft="@dimen/px15"
-                android:paddingRight="@dimen/px20" >
+                android:paddingRight="@dimen/px20"
+                android:paddingTop="@dimen/px15" >
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:text="@string/tip_time"
                     android:textColor="@color/forgot_font_color"
@@ -169,9 +182,10 @@
 
                 <ToggleButton
                     android:id="@+id/tbTime"
-                    android:layout_width="133dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:checked="true"
                     android:textOff=""
@@ -193,10 +207,10 @@
                 android:paddingLeft="@dimen/px10"
                 android:paddingRight="@dimen/px20" >
 
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:text="省流量模式"
                     android:textColor="@color/font_color_4c4c4c"
                     android:textSize="@dimen/font_size30" />
@@ -211,9 +225,10 @@
 
                 <ToggleButton
                     android:id="@+id/tbPowerSwitch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="74dp"
+                    android:layout_height="34dp"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:checked="true"
                     android:textOff=""
@@ -245,6 +260,7 @@
                 android:textSize="@dimen/font_size30" />
 
             <Button
+                android:id="@+id/btn_feedback"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
