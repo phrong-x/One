@@ -125,6 +125,8 @@
         </activity>
         <activity android:name="com.kaiqi.love_family.activity.BrowsingHistory" >
         </activity>
+        <activity android:name="com.kaiqi.love_family.fragment.CollectionFragment" >
+        </activity>
     </application>
 
 </manifest>

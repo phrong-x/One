@@ -1346,7 +1346,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:defaultSrc
+          @attr name com.kaiqi.love_family:defaultSrc
         */
         public static final int AsyncImageView_defaultSrc = 0;
         /**
@@ -1365,7 +1365,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>hdpi</code></td><td>240</td><td></td></tr>
 <tr><td><code>xhdpi</code></td><td>320</td><td></td></tr>
 </table>
-          @attr name android:inDensity
+          @attr name com.kaiqi.love_family:inDensity
         */
         public static final int AsyncImageView_inDensity = 2;
         /**
@@ -1381,7 +1381,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:roundHeight
+          @attr name com.kaiqi.love_family:roundHeight
         */
         public static final int AsyncImageView_roundHeight = 4;
         /**
@@ -1397,7 +1397,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:roundWidth
+          @attr name com.kaiqi.love_family:roundWidth
         */
         public static final int AsyncImageView_roundWidth = 3;
         /**
@@ -1411,7 +1411,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:url
+          @attr name com.kaiqi.love_family:url
         */
         public static final int AsyncImageView_url = 1;
         /** Attributes that can be used with a MyViewPager.
@@ -1420,8 +1420,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MyViewPager_android_gravity com.kaiqi.love_family:android_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #MyViewPager_android_scaleType com.kaiqi.love_family:android_scaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyViewPager_android_gravity android:gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyViewPager_android_scaleType android:scaleType}</code></td><td></td></tr>
            <tr><td><code>{@link #MyViewPager_changeInterval com.kaiqi.love_family:changeInterval}</code></td><td></td></tr>
            <tr><td><code>{@link #MyViewPager_dotsBackground com.kaiqi.love_family:dotsBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #MyViewPager_dotsBgAlpha com.kaiqi.love_family:dotsBgAlpha}</code></td><td></td></tr>
@@ -1451,15 +1451,15 @@ android:scaleType定义ViewPager中ImageView的scale类型，如果ViewPager中�
             0x7f010006
         };
         /**
-          <p>This symbol is the offset where the {@link com.kaiqi.love_family.R.attr#android_gravity}
+          <p>This symbol is the offset where the {@link android.R.attr#gravity}
           attribute's value can be found in the {@link #MyViewPager} array.
-          @attr name android:android_gravity
+          @attr name android:gravity
         */
         public static final int MyViewPager_android_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.kaiqi.love_family.R.attr#android_scaleType}
+          <p>This symbol is the offset where the {@link android.R.attr#scaleType}
           attribute's value can be found in the {@link #MyViewPager} array.
-          @attr name android:android_scaleType
+          @attr name android:scaleType
         */
         public static final int MyViewPager_android_scaleType = 1;
         /**
@@ -1473,7 +1473,7 @@ android:scaleType定义ViewPager中ImageView的scale类型，如果ViewPager中�
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:changeInterval
+          @attr name com.kaiqi.love_family:changeInterval
         */
         public static final int MyViewPager_changeInterval = 8;
         /**
@@ -1485,7 +1485,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:dotsBackground
+          @attr name com.kaiqi.love_family:dotsBackground
         */
         public static final int MyViewPager_dotsBackground = 6;
         /**
@@ -1499,7 +1499,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:dotsBgAlpha
+          @attr name com.kaiqi.love_family:dotsBgAlpha
         */
         public static final int MyViewPager_dotsBgAlpha = 7;
         /**
@@ -1509,7 +1509,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:dotsBlurImage
+          @attr name com.kaiqi.love_family:dotsBlurImage
         */
         public static final int MyViewPager_dotsBlurImage = 5;
         /**
@@ -1519,7 +1519,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:dotsFocusImage
+          @attr name com.kaiqi.love_family:dotsFocusImage
         */
         public static final int MyViewPager_dotsFocusImage = 4;
         /**
@@ -1535,7 +1535,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:dotsSpacing
+          @attr name com.kaiqi.love_family:dotsSpacing
         */
         public static final int MyViewPager_dotsSpacing = 3;
         /**
@@ -1564,7 +1564,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:dotsViewHeight
+          @attr name com.kaiqi.love_family:dotsViewHeight
         */
         public static final int MyViewPager_dotsViewHeight = 2;
         /** Attributes that can be used with a PullToRefresh.
@@ -1624,7 +1624,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:ptrAdapterViewBackground
+          @attr name com.kaiqi.love_family:ptrAdapterViewBackground
         */
         public static final int PullToRefresh_ptrAdapterViewBackground = 13;
         /**
@@ -1641,7 +1641,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>rotate</code></td><td>0x0</td><td></td></tr>
 <tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
 </table>
-          @attr name android:ptrAnimationStyle
+          @attr name com.kaiqi.love_family:ptrAnimationStyle
         */
         public static final int PullToRefresh_ptrAnimationStyle = 12;
         /**
@@ -1651,7 +1651,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawable
+          @attr name com.kaiqi.love_family:ptrDrawable
         */
         public static final int PullToRefresh_ptrDrawable = 6;
         /**
@@ -1661,7 +1661,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableBottom
+          @attr name com.kaiqi.love_family:ptrDrawableBottom
         */
         public static final int PullToRefresh_ptrDrawableBottom = 15;
         /**
@@ -1671,7 +1671,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableEnd
+          @attr name com.kaiqi.love_family:ptrDrawableEnd
         */
         public static final int PullToRefresh_ptrDrawableEnd = 8;
         /**
@@ -1681,7 +1681,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableStart
+          @attr name com.kaiqi.love_family:ptrDrawableStart
         */
         public static final int PullToRefresh_ptrDrawableStart = 7;
         /**
@@ -1691,7 +1691,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrDrawableTop
+          @attr name com.kaiqi.love_family:ptrDrawableTop
         */
         public static final int PullToRefresh_ptrDrawableTop = 14;
         /**
@@ -1703,7 +1703,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:ptrHeaderBackground
+          @attr name com.kaiqi.love_family:ptrHeaderBackground
         */
         public static final int PullToRefresh_ptrHeaderBackground = 1;
         /**
@@ -1715,7 +1715,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:ptrHeaderSubTextColor
+          @attr name com.kaiqi.love_family:ptrHeaderSubTextColor
         */
         public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
         /**
@@ -1725,7 +1725,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrHeaderTextAppearance
+          @attr name com.kaiqi.love_family:ptrHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
         /**
@@ -1737,7 +1737,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:ptrHeaderTextColor
+          @attr name com.kaiqi.love_family:ptrHeaderTextColor
         */
         public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
@@ -1759,7 +1759,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pullDownFromTop</code></td><td>0x1</td><td> These last two are depreacted </td></tr>
 <tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
 </table>
-          @attr name android:ptrMode
+          @attr name com.kaiqi.love_family:ptrMode
         */
         public static final int PullToRefresh_ptrMode = 4;
         /**
@@ -1770,7 +1770,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name android:ptrOverScroll
+          @attr name com.kaiqi.love_family:ptrOverScroll
         */
         public static final int PullToRefresh_ptrOverScroll = 9;
         /**
@@ -1782,7 +1782,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name android:ptrRefreshableViewBackground
+          @attr name com.kaiqi.love_family:ptrRefreshableViewBackground
         */
         public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
         /**
@@ -1793,7 +1793,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name android:ptrShowIndicator
+          @attr name com.kaiqi.love_family:ptrShowIndicator
         */
         public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
@@ -1803,7 +1803,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ptrSubHeaderTextAppearance
+          @attr name com.kaiqi.love_family:ptrSubHeaderTextAppearance
         */
         public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
     };

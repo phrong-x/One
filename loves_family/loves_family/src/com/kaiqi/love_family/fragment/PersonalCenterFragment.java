@@ -87,11 +87,8 @@ public class PersonalCenterFragment extends Fragment implements
 		switch (position) {
 		// 点击我的收藏
 		case 0:
-			FragmentTransaction transaction = getFragmentManager()
-					.beginTransaction();
-			transaction
-					.replace(R.id.fragment_content, new CollectionFragment());
-			transaction.commit();
+			mIntent = new Intent(getActivity(), CollectionFragment.class);
+			startActivity(mIntent);
 			break;
 		// 点击我的发布
 		case 1:
