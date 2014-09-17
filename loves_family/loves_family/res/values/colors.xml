@@ -302,5 +302,12 @@
     <!-- 黑色 -->
 
     <color name="ourcloor">#87CEEB</color>
+    <color name="bgColor_gray">#f2f2f2</color>
+    <color name="bgColor_white">#ffffff</color>
+    <color name="font_color_4c4c4c">#4c4c4c</color>
+    <color name="title_bar_font_color">#646464</color>
+    <color name="forgot_font_color">#999999</color>
+    <color name="font_color_b3b3b3">#b3b3b3</color>
+    <color name="cc">#808080</color>
 
 </resources>

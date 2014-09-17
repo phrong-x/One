@@ -8,6 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.ksoap2.serialization.SoapObject;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -44,13 +45,13 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.location.LocationClientOption.LocationMode;
 import com.kaiqi.love_family.R;
-import com.kaiqi.love_family.activity.ClassifyActivity;
 import com.kaiqi.love_family.activity.CompanyActivity;
 import com.kaiqi.love_family.activity.List_Activity;
 import com.kaiqi.love_family.adapter.AdvAdapter;
 import com.kaiqi.love_family.adapter.ListView_HomePager_Adapter;
 import com.kaiqi.love_family.comment.Config;
 import com.kaiqi.love_family.comment.ListView_Header;
+import com.kaiqi.love_family.comment.Network_judge;
 import com.kaiqi.love_family.comment.WebServiceUtils;
 import com.kaiqi.love_family.maps.MyApplication;
 import com.kaiqi.love_family.view.dialog.Effectstype;
@@ -73,7 +74,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 	private AtomicInteger what = new AtomicInteger(0);// 线程安全递增。
 	private boolean isContinue = true;
 	/**
-	 * 
+	 * 天气访问webService；
 	 */
 	private String WEB_SERVICE_URL = "http://www.webxml.com.cn/WebServices/WeatherWebService.asmx";
 	// 命名空间
@@ -93,7 +94,6 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 	ScrollView scroll;
 	ListView lv_hot;
 	ListView_HomePager_Adapter adapter;
-	List<ListView_Header> list;
 	List<String> property;
 	private Effectstype effect;
 	NiftyDialogBuilder dialogBuilder;
@@ -114,13 +114,10 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		getScreen();
 		initview();
 		setPositionParameters();
-		mLocationClient.start();// 启动定位
-		String location = mLocationClient.toString();
-		tv_location.setText(location);
+		
 		showWeather();
 		scroll.smoothScrollTo(0, 0);
 		setADViewPager();
-		setPicture();
 		adapter = new ListView_HomePager_Adapter(context);
 		lv_hot.setAdapter(adapter);
 		setListener();
@@ -132,7 +129,6 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 	 */
 	public void initview() {
 		more = (Button) view.findViewById(R.id.list_more);
-		// search = (EditText) view.findViewById(R.id.hp_search);
 		ll = (LinearLayout) view.findViewById(R.id.AD_ALL);
 		image_del = (ImageView) view.findViewById(R.id.AD_del);
 		tv_location = (TextView) view.findViewById(R.id.tv_location);
@@ -151,7 +147,6 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		image_13 = (ImageView) view.findViewById(R.id.b13);
 		image_14 = (ImageView) view.findViewById(R.id.b14);
 		// 其他。
-		list = new ArrayList<ListView_Header>();// 数据是从服务器上解析得来。
 		advPager = (ViewPager) view.findViewById(R.id.adv_pager);
 		group = (ViewGroup) view.findViewById(R.id.viewGroup);
 		((MyApplication) context.getApplicationContext()).locationaddr = tv_location;
@@ -322,40 +317,11 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 	}
 
 	/**
-	 * 设置控件在手机中的大小。
-	 * 
-	 * @param iv
-	 */
-	private void setImagePicture(View iv) {
-		LayoutParams lp;
-		lp = iv.getLayoutParams();
-		lp.height = screenWidth / 4 - 25;
-		lp.width = screenWidth / 4 - 10;
-		iv.setLayoutParams(lp);
-
-	}
-
-	/**
-	 * 设置图标的大小。
-	 */
-	private void setPicture() {
-		setImagePicture(image_01);
-		setImagePicture(image_02);
-		setImagePicture(image_03);
-		setImagePicture(image_04);
-		setImagePicture(image_11);
-		setImagePicture(image_12);
-		setImagePicture(image_13);
-		setImagePicture(image_14);
-	}
-
-	/**
 	 * 为控件添加监听事件
 	 */
 	private void setListener() {
-		more.setOnClickListener(this);
 		image_del.setOnClickListener(this);
-		location.setOnClickListener(this);
+		more.setOnClickListener(this);
 		image_01.setOnClickListener(this);
 		image_02.setOnClickListener(this);
 		image_03.setOnClickListener(this);
@@ -376,16 +342,6 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		case R.id.AD_del:
 			showDialog();
 			break;
-		case R.id.location:
-				
-				//String city;
-				/*
-				 * if (location.contains("黑龙江")||location.contains("内蒙古")) {
-				 * city=location.substring(0,2); } else {
-				 * city=location.substring(0, 1); }
-				 * tv_weather.setText(showWeather(city));
-				 */
-			break;
 		case R.id.list_more:
 			// 跳转；
 			intent.setClass(context, List_Activity.class);
@@ -394,51 +350,69 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		case R.id.b01:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
-			intent.putExtra("result", "搬家");
+			intent.putExtra("result", Config.CHONGWU);
 			startActivityForResult(intent, Config.REQUESTCODE_01);
 
 			break;
 		case R.id.b02:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.XIANHUA);
 			startActivityForResult(intent, Config.REQUESTCODE_02);
 			break;
 		case R.id.b03:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.PAICHUSUO);
 			startActivityForResult(intent, Config.REQUESTCODE_03);
 			break;
 		case R.id.b04:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.JIAZHENGFUWU);
 			startActivityForResult(intent, Config.REQUESTCODE_04);
 			break;
 		case R.id.b11:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.ZHUCHE);
 			startActivityForResult(intent, Config.REQUESTCODE_11);
 			break;
 		case R.id.b12:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.KAISHUO);
 			startActivityForResult(intent, Config.REQUESTCODE_12);
 			break;
 		case R.id.b13:
 			// 跳转到对应的界面；
 			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.QIPAI);
 			startActivityForResult(intent, Config.REQUESTCODE_13);
 			break;
 		case R.id.b14:
 			// 跳转到对应的界面；
-			intent.setClass(context, ClassifyActivity.class);
+			intent.setClass(context, List_Activity.class);
+			intent.putExtra("result", Config.BANJIA);
 			startActivityForResult(intent, Config.REQUESTCODE_14);
 			break;
 		default:
 			break;
 		}
 	}
-
+	
+	/*  public void onActivityResult(int requestCode, int resultCode, Intent
+	  intent) { if (resultCode == Activity.RESULT_OK) { switch (requestCode) {
+	  case Config.REQUESTCODE_01: // property=intent.getIntExtra("property", //
+	  Config.REQUESTCODE_01); property =
+	  intent.getStringArrayListExtra("property"); break;
+	  
+	  default: break; }
+	  
+	 } };*/
+	 
 	public void setPositionParameters() {
+		if (Network_judge.judge(context)==true) {
 		LocationClientOption option = new LocationClientOption();
 		option.setLocationMode(LocationMode.Hight_Accuracy);// 设置定位模式
 		option.setCoorType("bd09ll");// 返回的定位结果是百度经纬度，默认值gcj02
@@ -446,6 +420,13 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		option.setIsNeedAddress(true);// 返回的定位结果包含地址信息
 		option.setNeedDeviceDirect(true);// 返回的定位结果包含手机机头的方向
 		mLocationClient.setLocOption(option);
+		mLocationClient.start();// 启动定位
+		String location = mLocationClient.toString();
+		tv_location.setText(location);
+		}else {
+			tv_location.setText("网络异常，加载数据失败！");
+		}
+		
 	}
 
 	/**
@@ -502,17 +483,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 		startActivity(intent);
 	}
 
-	/*
-	 * public void onActivityResult(int requestCode, int resultCode, Intent
-	 * intent) { if (resultCode == Activity.RESULT_OK) { switch (requestCode) {
-	 * case Config.REQUESTCODE_01: // property=intent.getIntExtra("property", //
-	 * Config.REQUESTCODE_01); property =
-	 * intent.getStringArrayListExtra("property"); break;
-	 * 
-	 * default: break; }
-	 * 
-	 * } };
-	 */
+	
 	// 展现天气预报的具体数据
 
 	private void showWeather() {
@@ -538,7 +509,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,
 						} else {
 							Toast.makeText(context, "获取WebService数据错误,请确保网路通畅！",
 									Toast.LENGTH_SHORT).show();
-							tv_weather.setText("加载定位数据失败，请检测网路情况！");
+							tv_weather.setText("网路连接失败！");
 						}
 					}
 				});// 根据城市获取城市具体天气情况

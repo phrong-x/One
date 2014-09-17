@@ -122,6 +122,7 @@
             <ListView
                 android:id="@+id/listPersonalCenter"
                 android:layout_width="match_parent"
+                android:scrollbars="none"
                 android:layout_height="match_parent" >
             </ListView>
         </LinearLayout>

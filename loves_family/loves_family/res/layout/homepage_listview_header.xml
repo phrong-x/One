@@ -55,7 +55,7 @@
                     android:id="@+id/stars"
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="17.5dp"
+                    android:layout_marginTop="15dp"
                     android:contentDescription="@string/app_name"
                     android:src="@drawable/star50" />
             </LinearLayout>
@@ -108,7 +108,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="center_vertical"
             android:background="@drawable/telephone_image"
             android:contentDescription="@string/app_name" />
     </LinearLayout>
@@ -116,7 +118,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="3dp"
         android:background="@drawable/line_h" />
 
 </LinearLayout>

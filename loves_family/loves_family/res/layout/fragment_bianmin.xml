@@ -4,31 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/title_bg"
-        android:orientation="horizontal" >
-
-        <ImageButton
-            android:id="@+id/classify_back"
-            android:layout_width="42dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginLeft="3dp"
-            android:background="@null"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/backward_normal" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginLeft="-45dp"
-            android:gravity="center"
-            android:text="@string/classify"
-            android:textSize="25sp" />
-    </LinearLayout>
+        android:layout_gravity="center"
+        android:background="@drawable/bianmin_title"
+        android:gravity="center"
+        android:textSize="25sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,10 +25,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -55,11 +33,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bangbang"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/bangbang" />
 
                 <ImageView
                     android:id="@+id/iv_02"
@@ -67,10 +43,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/help"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/help" />
 
                 <ImageView
                     android:id="@+id/iv_03"
@@ -78,10 +53,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/police_station"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/police_station" />
 
                 <ImageView
                     android:id="@+id/iv_04"
@@ -89,18 +63,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/housekeeping"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/housekeeping" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -109,11 +79,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/agent"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/agent" />
 
                 <ImageView
                     android:id="@+id/iv_12"
@@ -122,8 +90,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/meals"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/meals" />
 
                 <ImageView
                     android:id="@+id/iv_13"
@@ -131,11 +99,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/chessandcard"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/chessandcard" />
 
                 <ImageView
                     android:id="@+id/iv_14"
@@ -143,19 +109,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/logistics"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/logistics" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -164,11 +125,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/cigarette_wine"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/cigarette_wine" />
 
                 <ImageView
                     android:id="@+id/iv_22"
@@ -177,8 +136,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/health_medical"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/health_medical" />
 
                 <ImageView
                     android:id="@+id/iv_23"
@@ -186,11 +145,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/supermarket"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/supermarket" />
 
                 <ImageView
                     android:id="@+id/iv_24"
@@ -198,18 +155,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/remove"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/remove" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -218,11 +171,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/recycle"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/recycle" />
 
                 <ImageView
                     android:id="@+id/iv_32"
@@ -231,8 +182,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/car"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/car" />
 
                 <ImageView
                     android:id="@+id/iv_33"
@@ -240,11 +191,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/distribution"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/distribution" />
 
                 <ImageView
                     android:id="@+id/iv_34"
@@ -252,19 +201,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/broadband"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/broadband" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -273,11 +217,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/fitment"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/fitment" />
 
                 <ImageView
                     android:id="@+id/iv_42"
@@ -286,8 +228,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/maintain"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/maintain" />
 
                 <ImageView
                     android:id="@+id/iv_43"
@@ -295,11 +237,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/unclicking"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/unclicking" />
 
                 <ImageView
                     android:id="@+id/iv_44"
@@ -307,18 +247,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bank"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/bank" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -327,11 +263,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/flower"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/flower" />
 
                 <ImageView
                     android:id="@+id/iv_52"
@@ -340,8 +274,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/driving"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/driving" />
 
                 <ImageView
                     android:id="@+id/iv_53"
@@ -349,11 +283,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/laundry"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/laundry" />
 
                 <ImageView
                     android:id="@+id/iv_54"
@@ -361,19 +293,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/pet"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/pet" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -382,11 +309,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/fraulein"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/fraulein" />
 
                 <ImageView
                     android:id="@+id/iv_62"
@@ -395,8 +320,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/lavipeditum"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/lavipeditum" />
 
                 <ImageView
                     android:id="@+id/iv_63"
@@ -404,11 +329,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/pipeline"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/pipeline" />
 
                 <ImageView
                     android:id="@+id/iv_64"
@@ -416,10 +339,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/tutorial"
-                    android:contentDescription="@string/action_settings" />
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/tutorial" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

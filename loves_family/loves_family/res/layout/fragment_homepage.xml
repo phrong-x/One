@@ -61,10 +61,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginBottom="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp"
-        android:layout_marginTop="3dp"
         android:background="@drawable/weather_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
@@ -119,9 +117,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
-                android:layout_marginTop="5dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -130,10 +125,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bangbang"
+                    android:src="@drawable/pet"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -143,7 +136,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/help"
+                    android:paddingRight="18dp"
+                    android:src="@drawable/flower"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -152,10 +146,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/police_station"
+                    android:src="@drawable/police_station"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -164,19 +156,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/housekeeping"
+                    android:src="@drawable/housekeeping"
                     android:contentDescription="@string/action_settings" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
-                android:layout_marginTop="15dp"
                 android:orientation="horizontal" >
 
                 <ImageView
@@ -185,10 +172,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/agent"
+                    android:src="@drawable/car"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -198,7 +183,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/meals"
+                    android:src="@drawable/unclicking"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -207,10 +192,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/chessandcard"
+                    android:src="@drawable/chessandcard"
                     android:contentDescription="@string/action_settings" />
 
                 <ImageView
@@ -219,9 +202,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginRight="12dp"
                     android:layout_weight="1"
-                    android:background="@drawable/more"
+                    android:src="@drawable/remove"
                     android:contentDescription="@string/action_settings" />
             </LinearLayout>
 
@@ -260,6 +242,7 @@
                     android:background="@null"
                     android:gravity="center"
                     android:text="@string/more"
+                    android:textStyle="bold"
                     android:textSize="21sp" />
             </LinearLayout>
 

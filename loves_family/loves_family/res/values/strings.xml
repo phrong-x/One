@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">loves_family</string>
+    <string name="app_name">爱家999</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="costomview">是否隐藏推荐广告？</string>
@@ -23,7 +23,7 @@
     <string name="search">请输入关键字</string>
     <string name="back">返回</string>
     <string name="top_Companies">热门公司</string>
-    <string name="more">更多……</string>
+    <string name="more">更多>></string>
     <string name="company_name">重庆北流科技责任有限公司</string>
     <string name="chengxin">诚信：</string>
     <string name="working">业务：</string>
@@ -37,10 +37,11 @@
     <string name="area">区域</string>
     <string name="classify">分类</string>
     <string name="sort">排序</string>
-    <string name="detail">商铺详情</string>
+    <string name="detail">详情</string>
     <string name="about_us">关于我们</string>
     <string name="service_features">服务特色</string>
     <string name="business_area">营业区域</string>
+    <string name="area_content">南岸区\u3000渝中区\u3000沙坪坝区\u3000江北区\u3000渝北区\u3000大渡口区</string>
     <string name="search_more">查看更多</string>
     <string name="content">\u3000\u3000我们公司秉承质量第一，顾客至上的原则，是重庆一家专注于公司形象、品牌宣传、公司企业网站建设和公司网上业务推广的公司.我公司依托强大的网站建设实力在为企业信息化建设服务的道路上，不断推陈出新,网站上线以来注册用户现已达到2000多家,我公司旗下拥有重庆信息网，SEO优化排名，烽火台软件群发，主机(美国，香港，大陆)，域名注册等网络服务，拥有一批从事于网络服务的专业团队。 竭诚为国内外广大客户朋友提供优质的服务，希望通过我们的真诚与努力能够成为您长期的合作伙伴，共创辉煌！ 现重庆信息网提供广告位招租，企业宣传，产品发布和网站建设，网站推广，SEO优化排名等网络服务</string>
     <string name="service_category">服务类别</string>
@@ -111,12 +112,6 @@
     <string name="hight_accuracy_desc">高精度定位模式下，会同时使用GPS、Wifi和基站定位，返回的是当前条件下精度最好的定位结果</string>
     <string name="saving_battery_desc">低功耗定位模式下，仅使用网络定位即Wifi和基站定位，返回的是当前条件下精度最好的网络定位结果</string>
     <string name="device_sensor_desc">仅用设备定位模式下，只使用用户的GPS进行定位。这个模式下，由于GPS芯片锁定需要时间，首次定位速度会需要一定的时间</string>
-    <color name="bgColor_gray">#f2f2f2</color>
-    <color name="bgColor_white">#ffffff</color>
-    <color name="font_color_4c4c4c">#4c4c4c</color>
-    <color name="title_bar_font_color">#646464</color>
-    <color name="forgot_font_color">#999999</color>
-    <color name="font_color_b3b3b3">#b3b3b3</color>
-    <color name="cc">#808080</color>
+    
 
 </resources>

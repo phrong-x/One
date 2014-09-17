@@ -1,21 +1,22 @@
 package com.kaiqi.love_family.activity;
 
-import com.kaiqi.love_family.R;
-import com.kaiqi.love_family.fragment.CollectionFragment;
-import com.kaiqi.love_family.fragment.HomePageFragment;
-import com.kaiqi.love_family.fragment.PersonalCenterFragment;
-import com.kaiqi.love_family.fragment.PublishFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.util.DisplayMetrics;
 import android.view.Menu;
-import android.view.Window;
 import android.view.ViewGroup.LayoutParams;
+import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+
+import com.kaiqi.love_family.R;
+import com.kaiqi.love_family.fragment.BianMinFragment;
+import com.kaiqi.love_family.fragment.HomePageFragment;
+import com.kaiqi.love_family.fragment.PersonalCenterFragment;
+import com.kaiqi.love_family.fragment.PublishFragment;
 
 /**
  * 主要界面，导航。
@@ -29,7 +30,7 @@ public class IndexActivity extends FragmentActivity {
 	RadioButton rb_1;
 	HomePageFragment homepage;
 	PublishFragment publish;
-	CollectionFragment collection;
+	BianMinFragment bianmin;
 	PersonalCenterFragment personal;
 	FragmentTransaction transaction;
 	int screenWidth, screenHeigh;
@@ -74,7 +75,7 @@ public class IndexActivity extends FragmentActivity {
 		rb_1 = (RadioButton) findViewById(R.id.index_rb_1);
 		homepage = new HomePageFragment();
 		publish=new PublishFragment();
-		collection=new CollectionFragment();
+		bianmin=new BianMinFragment();
 		personal=new PersonalCenterFragment();
 	}
 
@@ -89,10 +90,10 @@ public class IndexActivity extends FragmentActivity {
 				transaction.replace(R.id.fragment_content, homepage).commit();
 				break;
 			case R.id.index_rb_2:
-				transaction.replace(R.id.fragment_content, publish).commit();
+				transaction.replace(R.id.fragment_content, bianmin).commit();
 				break;
 			case R.id.index_rb_3:
-				transaction.replace(R.id.fragment_content, collection).commit();
+				transaction.replace(R.id.fragment_content, publish).commit();
 				break;
 			case R.id.index_rb_4:
 				transaction.replace(R.id.fragment_content, personal).commit();

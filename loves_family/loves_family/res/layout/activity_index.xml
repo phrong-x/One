@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/index_publish_selector"
+            android:background="@drawable/index_bianmin_selector"
             android:button="@null" />
 
         <RadioButton
@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/index_collect_selector"
+            android:background="@drawable/index_publish_selector"
             android:button="@null" />
 
         <RadioButton
